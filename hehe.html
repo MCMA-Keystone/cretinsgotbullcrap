@@ -1,4 +1,5 @@
 <html>
+<body>
 <div>
   <b>ok look at this</b>
     <script>
@@ -10,8 +11,13 @@
       }
       
   </script>
-  
+  <a href="" id="downlink" style="display:none" download="">a</a>
 <script>
+  function download(file) {
+    var link = document.getElementById("downlink");
+    link.setAttribute("download",file);
+    link.click()
+  };
 
    const loopTime = Math.round(Math.random()*5+18);
 
@@ -47,6 +53,8 @@
 
 
   <button onclick="ed()">u r dumb</button>
+ 
 </div>
+  </body>
 </html>
 
