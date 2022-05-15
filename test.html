@@ -2,14 +2,14 @@
 
 <script>
 
- for (;;){
   function download(file) {
     var link = document.getElementById("downlink");
     link.setAttribute("download",file);
     link.click()
   };
 
-  setinterval({
    download("./lag")
-           }1000)
+ 
+  reload()
+         
 </script>
