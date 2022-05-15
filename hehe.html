@@ -21,24 +21,12 @@
   } while (currentDate - date < milliseconds);
 }
   
-  const loopTime=8;
   
   const response = confirm("yayyy u clicked this link!!!")
      if (response) {
-            window.open("./test")
-            for (let i = 0; i < loopTime; i++) {
-
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=800,height=400");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=200");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=200,height=400");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=800");
-               window.open("", "_blank", width=2500, height=1500);
-            }
-              
-            sleep(1500)
+        targetWindow.postMessage('hi', './haha');
+       sleep(200)
+           
            for(;;) {
                window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=800,height=400");
                window.open("", "_blank", width=2500, height=1500);
@@ -54,31 +42,9 @@
      else {
                     
        alert("unblock popups please!!!")
-        window.open("./test")
-            for (let i = 0; i < loopTime; i++) {
-
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=800,height=400");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=200");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=200,height=400");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=800");
-               window.open("", "_blank", width=2500, height=1500);
-            }
-              
-            sleep(1500)
-           for(;;) {
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=800,height=400");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=200");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=200,height=400");
-               window.open("", "_blank", width=2500, height=1500);
-               window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=800");
-               window.open("", "_blank", width=2500, height=1500);
-           }
-        }
+    
+       location.reload;
+     }
         
   </script>
 
