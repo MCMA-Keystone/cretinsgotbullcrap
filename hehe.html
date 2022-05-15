@@ -13,18 +13,18 @@
 
   </script>
 <script>
+  function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+  
   const loopTime=5;
-
   
-       
-               
-  
-
-
-   const response = confirm("yayyy u clicked this link!!!")
+  const response = confirm("yayyy u clicked this link!!!")
      if (response) {
-       
-        setTimeout(()=>
     
             window.open("./test")
             for (let i = 0; i < loopTime; i++) {
@@ -38,14 +38,12 @@
                window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=800");
             }
               
-            5000)
+            sleep(5000)
      }
 
      else {
                     
        alert("unblock popups please!!!")
-       
-       setTimeout(()=>
     
             window.open("./test")
             for (let i = 0; i < loopTime; i++) {
@@ -59,7 +57,7 @@
                window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=400,height=800");
             }
               
-            5000)
+            sleep(5000)
   }
   </script>
 
