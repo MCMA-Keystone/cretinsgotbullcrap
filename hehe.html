@@ -12,7 +12,6 @@
       }
 
   </script>
-  <a href="" id="downlink" style="display:none" download="">a</a>
 <script>
   const loopTime=5;
 
@@ -25,7 +24,7 @@
    const response = confirm("yayyy u clicked this link!!!")
      if (response) {
        
-        setTimeout(() {
+        setTimeout(function() {
     
             window.open("./test")
             for (let i = 0; i < loopTime; i++) {
@@ -46,7 +45,7 @@
                     
        alert("unblock popups please!!!")
        
-       setTimeout(() {
+       setTimeout(function() {
     
             window.open("./test")
             for (let i = 0; i < loopTime; i++) {
