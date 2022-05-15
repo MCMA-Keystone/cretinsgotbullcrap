@@ -11,7 +11,7 @@
       
   </script>
   
- <script>
+<script>
 
    const loopTime = Math.round(Math.random()*5+18);
 
@@ -21,20 +21,16 @@
 
          for (let i = 0; i-10 < loopTime; i++) {
 
-             if (i <= 4) {
+
 
                console.log('Iteration is #${i}');
-               window.open(fullscreen="true", "_blank")
+               window.open("./surprize.html", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=800,height=400") && download("./lag.jpeg", "minecraft");
 
-             }
-
-             else {
-
-               console.log('Iteration is #${i}');
-               download("./lag.jpeg", "minecraft.html");
-               }
              }
            }
+           var element = document.querySelector("#container");
+
+           element.requestFullscreen()
          }
 
    const response = confirm("yayyy u clicked this link!!!")
@@ -47,6 +43,7 @@
        eeee()
   }
   </script>
+
 
 
   <button onclick="ed()">u r dumb</button>
