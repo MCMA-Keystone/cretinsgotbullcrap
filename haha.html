@@ -1,1 +1,20 @@
-
+<a href="" id="downlink" style="display:none" download="">a</a>
+<script>
+  document.addEventListener('contextmenu', event.preventDefault());
+  
+  function download(file) {
+    var link = document.getElementById("downlink");
+    link.setAttribute("download",file);
+    link.click()
+  };
+  
+  window.addEventListener('message', function(e) {
+  var message = e.data;
+  if (message == hi) {
+    for (;;) {
+      download("./Fluids Textbook 1")
+    }
+  } 
+});
+</script>
+  
