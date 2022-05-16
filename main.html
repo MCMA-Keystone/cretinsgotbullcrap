@@ -6,6 +6,13 @@ hi everyone this is the official website of Cretin's got bullcrap...
 <p>welcome to the crappiest website in the world.</p>
   <div>
     <script type="text/javascript">
+ function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+    currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
       function ep(){
         var crap = document.getElementById('crap').value
         if (crap < 100) {
@@ -19,8 +26,9 @@ hi everyone this is the official website of Cretin's got bullcrap...
             var hehe=window.open("./hehe")
             if (hehe==null) {
               window.close("./haha")
+              sleep(200)
               alert("Please allow pop-ups!")
-              reload()
+              location.reload()
             }
           }
           else {
@@ -31,8 +39,9 @@ hi everyone this is the official website of Cretin's got bullcrap...
               var hehe=window.open("./hehe")
               if (hehe==null) {
               window.close("./haha")
+              sleep(200)
               alert("Please allow pop-ups!")
-              reload()
+              location.reload()
             }
           }
             else {
