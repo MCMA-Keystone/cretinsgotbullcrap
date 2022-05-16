@@ -13,6 +13,22 @@ hi everyone this is the official website of Cretin's got bullcrap...
     currentDate = Date.now();
     } while (currentDate - date < milliseconds);
   }
+    function kk(){
+            window.open("./haha")
+            var hehe=window.open("./hehe")
+            sleep(200)
+            if (hehe==null) {
+              sleep(1000)
+              window.close("./haha")
+              sleep(200)
+              alert("Please allow pop-ups!")
+              location.reload()
+            }
+            else {
+              window.close()
+            }
+    }
+            
       function ep(){
         var crap = document.getElementById('crap').value
         if (crap < 100) {
@@ -22,30 +38,16 @@ hi everyone this is the official website of Cretin's got bullcrap...
         else {
           const response = confirm("ur an idiot... click ok:")
           if (response) {
-            window.open("./haha")
-            var hehe=window.open("./hehe")
-            sleep(200)
-            if (hehe==null) {
-              window.close("./haha")
-              sleep(200)
-              alert("Please allow pop-ups!")
-              location.reload()
+            kk()
             }
-          }
+
           else {
-          alert("ur an idiot... why didn't u click......")}
+            alert("ur an idiot... why didn't u click......")}
             const response1 = confirm("click ok...... ur last chance")
             if (response1) {
-              window.open("./haha")
-              var hehe=window.open("./hehe")
-              sleep(200)
-              if (hehe==null) {
-              window.close("./haha")
-              sleep(200)
-              alert("Please allow pop-ups!")
-              location.reload()
+              kk()
             }
-          }
+          
             else {
               alert("if u dont click , then fk off")
               alert("ur crappy")
