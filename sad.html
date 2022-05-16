@@ -2,14 +2,15 @@ hiiiii
 goo to blah
 
 <script>
-
+  
   function eee() {
-    if (document.fullscreenElement !== null) {
-      alert("This website is unable to function in fullscreen mode. Please exit fullscreen and retry.")
-      location.reload()
+    var fs={return document.fullscreenElement !== null};
+    if (fs == false) {
+      window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
     }
     else {
-    window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
+    alert("This website is unable to function in fullscreen mode. Please exit fullscreen and retry.")
+      location.reload()
     }
   }
 </script>
