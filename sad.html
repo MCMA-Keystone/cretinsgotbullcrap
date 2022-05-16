@@ -4,14 +4,11 @@ goo to blah
 <script>
   
   function eee() {
-
-    if (document.fullscreenElement == null) {
-      window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
-    }
-    else {
-    alert("This website is unable to function in fullscreen mode. Please exit fullscreen and retry.")
-      location.reload()
-    }
+   
+    alert("For best experience, it is recommended that fullscreen mode is disabled.")
+    window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
+    window.close()
+      
   }
 </script>
   <button onclick="eee()">clickclick</button>
