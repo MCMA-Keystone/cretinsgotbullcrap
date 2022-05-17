@@ -5,13 +5,22 @@ goo to blah
   
   function eee() {
     
-    if (window.outerHeight > 822 && window.outerWidth > 1440) {
-      alert("For best experience, please disable full screen/focus mode.")
-      location.reload()
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      alert("This program is not supported on mobile devices. Please try using a computer instead.")
+      document.write("")
     }
     
     else {
-    window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
+    
+      if (window.outerHeight > 822 && window.outerWidth > 1440) {
+        alert("For best experience, please disable full screen/focus mode.")
+        location.reload()
+      }
+
+      else {
+      window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
+      }
+      
     }
       
   }
