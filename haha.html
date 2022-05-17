@@ -2,14 +2,14 @@
 <body oncontextmenu="return false;">
 <a href="" id="downlink" style="display:none" download="">a</a>
 <script>
- var x = event.clientX;
- 
- var y = event.clientY;
   
- document.getElementById("X").value = xpos;
- document.getElementById("Y").value = ypos;
+ document.addEventListener('mousemove', logKey);
   
- 
+  function logKey(e) {
+    xpos=e.screenX
+    ypos=e.screenY
+  }
+
   function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
