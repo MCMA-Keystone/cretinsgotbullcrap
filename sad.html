@@ -4,10 +4,15 @@ goo to blah
 <script>
   
   function eee() {
-   
-    alert("For best experience, it is recommended that fullscreen mode is disabled.")
+    
+    if (window.outerHeight > 822 && window.outerWidth > 1440) {
+      alert("For best experience, please disable full screen/focus mode.")
+      location.reload()
+    }
+    
+    else {
     window.open("https://mcma-keystone.github.io/cretinsgotbullcrap/main")
-    window.close()
+    }
       
   }
 </script>
