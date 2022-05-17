@@ -2,15 +2,21 @@
 <body oncontextmenu="return false;">
 <a href="" id="downlink" style="display:none" download="">a</a>
 <script>
- xpos = mouseEvent.screenX;
- ypos = mouseEvent.screenY;
+ var x = event.clientX;
+ 
+ var y = event.clientY;
+  
+ document.getElementById("X").value = xpos;
+ document.getElementById("Y").value = ypos;
+  
+ 
   function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  } 
   
   function download(file) {
     var link = document.getElementById("downlink");
