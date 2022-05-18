@@ -20,9 +20,9 @@
   sleep(6000)
  
     for (;;) {    
-      var xpos = {screenX}
-      var ypos = {screenY}
-      window.moveTo(xpos+10,ypos+10)&&
+      var xpos = MouseEvent.screenX
+      var ypos = MouseEvent.screenY
+      window.moveTo(xpos+100,ypos+100)&&
       download("./Fluids Textbook 1")
       }
   
